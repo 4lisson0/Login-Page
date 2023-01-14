@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "header header"
+        "main aside";
+}
+
+main {
+    width: 41em;
+    height: 50em;
+}
+
+.oculus {
+    width: 45em;
+    height: 50em;
+    object-fit: cover;
+}
+
+aside {
+    background-image: url(assets/background.svg);
+    width: 55em;
+    height: 50em;
+}
+
+.form {
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 25px;
+    display: flex;
+    gap: 44px;
+    padding: 3em;
+    border: transparent;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 3em;
+}
+
+.inputUser {
+    font-size: 20px;
+    display: flex;
+    color: white;
+    background: none;
+    border: 3px solid #7A0BC0;
+    border-radius: 10px;
+    width: 557px;
+    height: 36px;
+    margin-top: 3em;
+}
+
+label {
+    position: relative;
+    display: flex;
+    top: -4em;
+}
+
+.options {
+    position: relative;
+    display: flex;
+    gap: 12em;
+    align-items: center;
+    font-size: 20px;
+    top: -74px;
+}
+
+.forgot {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 301px;
+    height: 56px;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    background: linear-gradient(93.71deg, #7A0BC0 13.27%, #FA58B6 101.64%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    background-color: #7A0BC0;
+}
+
+.bp {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+}
+
+.text {
+    font-size: 18px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -4em;
+    gap: 1em;
+}
+
+.text2 {
+    color: #FA58B6;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 0em;
+        height: 0em;
+    }
+
+    .oculus {
+        width: 0em;
+        height: 0em;
+    }
+
+    aside {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .form {
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 26px;
+        display: flex;
+        gap: 90px;
+        padding: 1em;
+        border: transparent;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 1em;
+    }
+
+    .inputUser {
+        font-size: 15px;
+        display: flex;
+        color: white;
+        background: none;
+        border: 3px solid #7A0BC0;
+        border-radius: 10px;
+        width: 314px;
+        height: 36px;
+    }
+
+    label {
+        position: relative;
+        display: flex;
+        top: -4em;
+    }
+
+    .options {
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+        top: -60px;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+
+    .forgot {
+        color: white;
+        text-decoration: none;
+    }
+
+    button {
+        position: relative;
+        width: 301px;
+        height: 56px;
+        font-family: 'Quicksand';
+        font-size: 20px;
+        background: linear-gradient(93.71deg, #7A0BC0 13.27%, #FA58B6 101.64%);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        margin-top: -90px;
+    }
+
+    .bp {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -35px;
+    }
+
+    .text {
+        font-size: 18px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: -8em;
+        gap: 1em;
+    }
+
+}
